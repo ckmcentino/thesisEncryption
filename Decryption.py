@@ -7,8 +7,8 @@ with open('cipher_file', 'rb') as c_file:
     iv = c_file.read(16)
     cipherText = c_file.read()
 
-cipher = AES.new(key,AES.MODE_CBC, iv)
+cipher = AES.new(key, AES.MODE_CBC, iv)
 
-plainText = unpad(cipher.decrypt(cipherText),AES.block_size)
+plainText = unpad(cipher.decrypt(cipherText), AES.block_size)
 
 print(plainText)

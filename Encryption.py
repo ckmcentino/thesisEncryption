@@ -24,7 +24,7 @@ def aes_userdata():
     # plainName = input('Enter Name: ').encode('ascii')
     # plaintLocation = input('Enter Location: ').encode('ascii')
     plainName = b'Adrian Robert Doroteo'
-    plainLocation = b'14.466762, 120.974886'
+    plainLocation = b'14.466762,120.974886'
     plainData = plainName + b',' + plainLocation
     cipher = AES.new(key, AES.MODE_CBC, iv)
 

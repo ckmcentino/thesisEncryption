@@ -57,7 +57,7 @@ timer = 5
 cipherText = aes_userdata()
 
 while x == True:
-    temp = random.randint(15, 69)
+    temp = random.randint(15, 125)
     co = random.randint(0, 100)
     gas = random.randint(0, 10000)
 
